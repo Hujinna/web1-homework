@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>homework</title>
+		<style>
+		    *{
+		    	padding:0px;
+		    	margin:0px;
+		    }
+		    ol,ul,li{
+		    	list-style:none;
+		    }
+		    a{
+		    	text-decoration:none;
+		    }
+		    /*head开始*/
+		    .header-wrap{
+	             height:31px;
+	             width:100%;
+	             background:rgb(244,244,244);
+            }
+             .header a{
+             	color:black;
+            }             
+             .header{
+             	height:31px;
+             	width:1200px;
+                margin:0px auto;
+                font-size:12px;
+                line-height:31px;
+            }
+             .header img{
+             	margin:7px 5px 0px 0px;   	 
+            }
+             .header span{
+                font-size:13px;
+             	float:right;
+	        }
+	         span div{
+	         	float:right;
+	        }
+             .header-left{
+             	width:245px;
+             	height:31px;
+             	float:left;   
+            }
+             .header-left a{
+             	margin-right:10px;
+            }
+             .header-right{
+             	float:right;     	 
+            }
+             .header-right a{
+                 margin-left:10px;
+            }
+             /* nav*/
+             .nav-wrap{
+                 width:100%;
+                 height:160px; 
+                 border-bottom:3px solid rgb(224,3,4);
+            }
+             .nav{
+                 height:160px;
+                 width:1200px;
+                 margin:0px auto;                 
+            }
+             .nav a{
+                 color:black;
+            }
+             .nav img{
+                float:left;
+             	margin:20px 200px 0px 0px;   
+            }
+             .biaodan{
+             	display:inline;
+             	margin-top:40px;
+             	height:40px;
+             	width:502px; 
+             	float:left;
+            }
+             .biaodan>.input1{
+             	color:#9E9E9E;
+             	font-size:14px;
+                width:406px;
+                height:36px;
+                border:2px solid rgb(248,56,56);
+                float:left;
+            }
+            .biaodan>.input2{ 
+                color:white;   
+             	font-size:16px;
+             	float:left;
+                width:92px;
+                height:40px;
+                background:rgb(248,56,56);
+                border:2px solid rgb(248,56,56);
+            }
+            .border{
+                border:1px solid rgb(227,227,227);
+                background:rgb(245,245,245);
+                width:150px;
+                height:40px;
+                float:left;
+                margin-top:40px;
+                margin-left:160px;
+                line-height:40px;
+                font-size:14px;
+                text-align:center;
+                line-height:40px;
+            }
+            .border img{
+            	margin:10px 0px 0px 25px;
+            }
+            .border span{
+                color:rgb(248,56,56);
+            }
+            .nav>.list{       	
+             	width:500px;
+             	height:30px; 	 
+            }
+            .list ul li{ 
+              	font-size:16px;
+                display:inline-block;
+             	width:90px;
+             	height:30px;
+             	margin:23px 30px 0px 0px;	 
+             	text-align:center;
+             	line-height:30px; 
+            }
+            .list ul li:hover{ 	
+              	display:hidden; 
+                border-radius:5px;
+              	background:rgb(248,56,56);
+              	color:white;
+            } 
+            .content-wrap{
+            	background:rgb(251,251,251);
+            	width:100%;
+            	height:653px;
+            }  
+            .content{
+            	line-height:50px;
+            	font-size:14px;
+            	margin:0px auto;
+            	width:1200px;
+            	height:653px;   
+            }
+            .content-header{
+            	float:left;
+            	width:1200px;
+            	height:68px;
+            	line-height:68px;
+            }
+            .wenzi{
+            	background:rgb(251,251,251);
+            	text-indent:75px;
+            	width:200px;
+            	height:566px;             
+            	float:left;
+            	margin-right:14px; 
+            }
+            .top1{
+            	width:200px;
+            	height:47px;
+            	background:white;	 
+            }
+            .top2{
+            	margin-top:10px;
+            	width:200px;
+            	height:510px;
+            	background:white;     	 
+            }
+            .top2 p:hover{
+            	display:hidden;
+            	color:rgb(255,88,77);
+            }
+            .wenzi img{
+            	margin-top:14px;
+            	margin-left:34px;
+            	width:20px;
+            	height:20px;
+            	float:left;
+            }               
+            .picture{
+            	background:white;
+            	margin-left:14px;
+            	float:left;
+            	width:972px;
+            	height:566px;       
+            }
+            .lists li{
+            	line-height:30px;
+            	text-align:center;
+            	width:220px;
+            	height:252px;
+            	border:1px solid rgb(219,219,219);
+            	margin-right:17px;
+            	margin-top:17px;
+            	float:left;
+            }            
+            .lists li span{
+            	color:#9E9E9E;
+            }
+            .second-wrap{
+            	width:100%;
+            	height:150px;
+            	background:black;
+            }
+            .second{
+            	color:white;
+            	margin:0px auto;
+            	width:1200px;
+            	height:150px;	 
+            	line-height:18px;
+            }
+            .s-list ul{
+            	float:left;	
+            }
+            .s-list ul li{
+            	margin:14px 195px 0px 0px;
+            	font-size:14px;	 
+            }
+            .s-list li a{
+            	color:white;
+            }
+            .bottom-wrap{
+            	width:100%;
+            	height:98px;
+            	background:black;
+            }
+            .bottom{
+            	border-top:1px solid rgb(46,46,46);
+            	width:1200px;
+            	height:98px;
+            	margin:0px auto;
+            }
+            .bottom p{                        	 
+            	color:#9E9E9E;
+                text-align:center;
+                font-size:14px;
+                line-height:35px;
+            }
+            .p1{
+            	margin-top:10px;
+            }
+		</style>
+	</head>
+	<body>
+	<form>
+	<div class="header-wrap">
+		<div class="header">
+		    <div class="header-left">
+			    <a href="#">我的收藏</a>
+			    <a href="#">E族之家手机版</a>
+			    <span>
+			    <img src="qq.png"/>
+			    <div>328203328</div></span>
+		    </div>
+		    <div class="header-right">
+		    	<a href="#">扫描加入</a>
+		    	<a href="#">欢迎来到E之家，请登录</a> 
+		    	<a href="#">注册</a>
+		    </div>
+		</div>
+		<div class="nav-wrap">
+		<div class="nav">   
+			<img src="./logo.png" alt="logo"/>
+			<div class="biaodan">
+            <input class="input1" type="text" name="inp1" value="    请输入关键词！"/>
+            <input class="input2" type="button" name="inp2" value="搜索"/>
+            </div>
+            <div class="border">
+            	<img src="./gouwu.png" alt="gouwu"/>购物车(<span>0</span>）件
+            </div>
+            <div class="list">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">E族生活</a></li>
+				<li><a href="#">E族服务</a></li>
+				<li><a href="#">E族爱心</a></li>
+			</ul>
+			</div>
+		</div>
+		</div> 
+		<div class="content-wrap">
+		    <div class="content">    
+		        <div class="content-header">
+		            <p>当前位置：E族爱心>食品</p>
+		        </div>         			    
+			    <div class="wenzi">
+			        <div class="top1">
+				        <img src="./wenzi.png" alt="wenzi"/>   
+				    	<p  style="font-size:16px;text-indent:21px"><a href="#">全部分类</a></p>
+				    </div>
+				    <div class="top2">
+                        <p>>食品</p>
+                        <p>>生活用品</p>
+                    </div>
+                </div> 
+                <div class="picture">
+				<ul class="lists">
+					<li style="margin-left:14px">
+						<img style="margin-top:30px;margin-bottom:4px" src="./lajiao.png" alt="lajiao"/>
+						<p><span>精品辣椒100g</span></p>
+						<p>￥90.00</p>
+					</li>
+					<li>
+						<img style="margin-top:36px" src="./baixiangguo.png" alt="bai"/>
+						<p><span>特级百香果3斤</span></p>
+						<p>￥90.00</p>
+					</li>
+					<li>
+						<img style="margin-top:13px;margin-bottom:7px" src="./beer.png" alt="beer"/>
+						<p><span>万威啤酒500ml</span></p>
+						<p>￥90.00</p>
+					</li>
+					<li>
+						<img style="margin-top:23px" src="./peanut.png" alt="peanut"/>
+						<p><span>万威啤酒500ml</span></p>
+						<p>￥90.00</p>
+					</li>
+					<li style="margin-left:14px">
+						<img style="margin-top:30px;margin-bottom:4px" src="./lajiao.png" alt="lajiao"/>
+						<p><span>精品辣椒100g</span></p>
+						<p>￥90.00</p>
+					</li>
+					<li>
+						<img style="margin-top:36px" src="./baixiangguo.png" alt="bai"/>
+						<p><span>特级百香果3斤</span></p>
+						<p>￥90.00</p>
+					</li>
+					<li>
+						<img style="margin-top:13px;margin-bottom:7px" src="./beer.png" alt="beer"/>
+						<p><span>万威啤酒500ml</span></p>
+						<p>￥90.00</p>
+					</li>
+					<li>
+						<img style="margin-top:23px" src="./peanut.png" alt="peanut"/>
+						<p><span>万威啤酒500ml</span></p>
+						<p>￥90.00</p>
+					</li>
+				</ul>
+			    </div>
+			</div>
+       	</div> 
+		<div class="second-wrap">
+			<div class="second">
+			    <div class="s-list">
+                    <ul style="margin-left:10px">
+                    	<li style="font-size:16px"><a href="#">新手上路</a></li>
+                    	<li><a href="#">售后流程</a></li>
+                    	<li><a href="#">购物流程</a></li>
+                    	<li><a href="#">订购方式</a></li>  
+                    </ul>
+				    <ul>
+                    	<li style="font-size:16px"><a href="#">配送方式</a></li>
+                    	<li><a href="#">货到付款区域</a></li>
+                    	<li><a href="#">配送支付查询</a></li>
+                    	<li><a href="#">支付方式说明</a></li>  
+                    </ul>
+                    <ul>
+                    	<li style="font-size:16px"><a href="#">购物指南</a></li>
+                    	<li><a href="#">常见问题</a></li>
+                    	<li><a href="#">订购流程</a></li>
+                    	<li><a href="#">注册新会员</a></li>  
+                    </ul>
+                    <ul>
+                    	<li style="font-size:16px"><a href="#">售后服务</a></li>
+                    	<li><a href="#">退换货原则</a></li>
+                    	<li><a href="#">售后服务保证</a></li>
+                    	<li><a href="#">换货流程</a></li>  
+                    </ul>
+                    <ul style="margin-right:-180px">
+                    	<li style="font-size:16px"><a href="#">关于我们</a></li>
+                    	<li><a href="#">网站故障报告</a></li>
+                    	<li><a href="#">联系我们</a></li>
+                    	<li><a href="#">投诉与建议</a></li>  
+                    </ul>        
+			    </div>
+			</div>
+		</div>
+		<div class="bottom-wrap">
+			<div class="bottom">
+				<p class="p1">E族生活   |   居家维修保养   |   住宿优惠信息   |   出行接送   |   E族活动   |   E族爱心   |   积分商城 </p>
+				<p>© 2017-2018  E族之家  版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+			</div>
+		</div>
+	</div>
+	</form>
+	</body>
+</html>
